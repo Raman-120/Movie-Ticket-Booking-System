@@ -1,6 +1,8 @@
 package model;
 
-public class Show {
+import java.io.Serializable;
+
+public class Show implements Serializable {
 
     private String showName;
     private String showGenre;

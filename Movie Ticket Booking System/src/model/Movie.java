@@ -1,6 +1,8 @@
 package model;
 
-public class Movie {
+import java.io.Serializable;
+
+public class Movie implements Serializable {
 
     private String movieName;
     private String movieGenre;
@@ -22,6 +24,11 @@ public class Movie {
 
     public int getDuration(){
         return this.duration;
+    }
+
+    @Override
+    public String toString(){
+        return this.movieName + " : " + " " + this.movieGenre + " " + this.duration + "\n";
     }
 
 }
