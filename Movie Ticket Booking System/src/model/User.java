@@ -14,7 +14,7 @@ public abstract class User implements Serializable {
         this.userName = userName;
         this.userPassword = userPassword;
         this.userEmail = userEmail;
-    }
+    } // creates an admin or customer object
 
     public int getUserId(){
         return this.userId;

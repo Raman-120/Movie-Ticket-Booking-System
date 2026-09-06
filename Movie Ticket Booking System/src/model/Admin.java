@@ -16,9 +16,11 @@ public class Admin extends User implements Serializable {
         System.out.println("8. View all Shows");
         System.out.println("View Registered Customers");
     }
+    // overrides the abstract method from User parent class
 
     Admin(int userId, String userName, String userPassword,String userEmail){
         super(userId, userName,userPassword,userEmail);
     }
+    //creates admin object
 
 }

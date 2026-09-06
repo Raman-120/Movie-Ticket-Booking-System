@@ -13,9 +13,11 @@ public class Customer extends User implements Serializable {
         System.out.println("5. Booking a Show");
         System.out.println("6. Ticket Details");
     }
+    // overrides the abstract method from User parent class
 
     Customer(int userId, String userName, String userPassword, String userEmail){
         super(userId,userName,userPassword,userEmail);
     }
+    // creates customer object
 
 }
